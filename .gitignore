@@ -1,0 +1,10 @@
+node_modules/
+platforms/
+plugins/
+www/
+.idea/
+coverage/
+.nyc_output/
+.stryker-tmp/
+reports/
+api/

@@ -1,0 +1,7 @@
+{
+  "name": "workshop-id-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
