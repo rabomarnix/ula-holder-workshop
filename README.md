@@ -25,7 +25,7 @@ You will initialize and load the following plugins to feed your app with the req
 3. [ula-vp-controller](https://github.com/rabobank-blockchain/ula-vp-controller)
 4. [ula-vc-data-management](https://github.com/rabobank-blockchain/ula-vc-data-management)
 
-**Tip:** [You can follow the full integration guide for all plugins above here](https://github.com/rabobank-blockchain/universal-ledger-agent/blob/master/docs/Integration.md#installing-the-components).
+**Tip:** [You can follow the full integration guide for all plugins above here](https://github.com/rabobank-blockchain/universal-ledger-agent/blob/develop/docs/Integration.md#installing-the-components).
 
 After initializing these plugins with their dependencies, you need to tie the knots:
 - Send the QR scanner payload to the ULA to kick off the credential exchange process
