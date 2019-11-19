@@ -28,7 +28,7 @@ export class ConsentPage implements OnInit {
   }
 
   giveConsent() {
-    // Todo send a message to the ULA with { type: 'accept-consent', payload: this.payload, url: this.payload.url } and a callback with one argument of type UlaResponse
+    // Todo send a message to the ULA with { type: 'accept-consent', payload: this.payload.filledTemplate, url: this.payload.url } and a callback with one argument of type UlaResponse
     // Todo inside the callback function, show a success message and dismiss the modal using modalCtrl
   }
 
