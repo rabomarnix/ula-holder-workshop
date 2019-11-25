@@ -12,7 +12,9 @@ Your task is to implement [ULA](https://github.com/rabobank-blockchain/universal
 
 During the workshop preparation, you have received a website in which you can create an account and generate a QR code.
 
-## Work!
+## Context
+
+
 
 This basic app has a QR code scanner, but misses the following:
 1. Logic for interpreting the QR code
@@ -25,13 +27,16 @@ You will initialize and load the following plugins to feed your app with the req
 3. [ula-vp-controller](https://github.com/rabobank-blockchain/ula-vp-controller)
 4. [ula-vc-data-management](https://github.com/rabobank-blockchain/ula-vc-data-management)
 
-**Tip:** [You can follow the full integration guide for all plugins above here](https://github.com/rabobank-blockchain/universal-ledger-agent/blob/develop/docs/Integration.md#installing-the-components).
+After [initializing the plugins](app/src/service/ula.service.ts) with their dependencies, you need to tie the knots:
+- [Send the QR payload](app/src/app/pages/scan-qr/scan-qr.page.ts) to the ULA to kick off the credential exchange process
+- In case of sending credentials to a third party, the user needs to [give consent](app/src/app/pages/consent/consent.page.ts)
+- [Show the credentials](app/src/app/pages/my-credentials/my-credentials.page.ts)
+- [Show the exchange transactions](app/src/app/pages/transactions/transactions.page.ts)
 
-After initializing these plugins with their dependencies, you need to tie the knots:
-- Send the QR scanner payload to the ULA to kick off the credential exchange process
-- In case of sending credentials to a third party, the user needs to give consent
-- Show the credentials
-- Show the exchange transactions
+## Work!
+
+Read the [last two instruction slides]() to get started. 
+You can find the ULA [full plugin integration guide](https://github.com/rabobank-blockchain/universal-ledger-agent/blob/develop/docs/Integration.md#installing-the-components) here.
 
 ## Running the app
 You can use the live reload feature by running `ionic serve`,
