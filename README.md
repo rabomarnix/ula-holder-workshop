@@ -35,7 +35,7 @@ After [initializing the plugins](app/src/service/ula.service.ts) with their depe
 
 ## Work!
 
-Read the [last two instruction slides]() to get started. 
+Read the [last two instruction slides](https://github.com/rabomarnix/ula-holder-workshop/blob/master/docs/ULA%20workshop.pdf) to get started. 
 You can find the ULA [full plugin integration guide](https://github.com/rabobank-blockchain/universal-ledger-agent/blob/develop/docs/Integration.md#installing-the-components) here.
 
 ## Running the app
