@@ -3,6 +3,8 @@
 This repo contains the source code for an ionic app which can run on ios, android and browser.
 Your task is to implement [ULA](https://github.com/rabobank-blockchain/universal-ledger-agent) plugins, in order to build your own identity app.
 
+**Extra challenging! This repository isn't maintained, so you'll have to figure out how to update and fix errors that are coming along the way.**
+
 ## Setup
 
 - Install [node.js](https://nodejs.org/en/)
@@ -13,8 +15,6 @@ Your task is to implement [ULA](https://github.com/rabobank-blockchain/universal
 During the workshop preparation, you have received a website in which you can create an account and generate a QR code.
 
 ## Context
-
-
 
 This basic app has a QR code scanner, but misses the following:
 1. Logic for interpreting the QR code
