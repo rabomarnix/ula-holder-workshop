@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "ionic:serve": "ng run app:serve --extra-webpack-config webpack.config.js",
-    "postinstall": "sed -i \"\" -E 's/node: false/node:{stream:true,crypto:true}/' node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs/browser.js"
+    "postinstall": "./post_install.sh"
   },
   "private": true,
   "dependencies": {
