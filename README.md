@@ -9,7 +9,7 @@ Your task is to implement [ULA](https://github.com/rabobank-blockchain/universal
 
 - Install [node.js](https://nodejs.org/en/)
 - Install Ionic with `npm install ionic -g`
-- Install Cordova: `npm install cordova@8.1.2 -g`
+- Install Cordova: `npm install cordova -g`
 - Install app dependencies with `cd app`, `npm install`
 
 During the workshop preparation, you have received a website in which you can create an account and generate a QR code.
