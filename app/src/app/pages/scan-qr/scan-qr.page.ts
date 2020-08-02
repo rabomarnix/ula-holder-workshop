@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner/ngx';
 import { UlaService } from '../../../service/ula.service';
 import { ModalController } from "@ionic/angular";
+import { Log } from '../../../util/log';
 
 @Component({
   selector: 'app-scan-qr',
@@ -23,7 +24,7 @@ export class ScanQrPage {
             // only the browser platform returns the payload inside the result property
             let payload = text.result ? JSON.parse(text.result) : JSON.parse(text)
 
-            console.log('Scanned:', payload);
+            Log.info('Scanned',payload);
 
             this.ulaService.sendMessage(payload, async (result /*type: UlaResponse*/) => {
               // Todo If result.statusCode is 204 or 201, you've received credentials. Show 'succeeded' message
